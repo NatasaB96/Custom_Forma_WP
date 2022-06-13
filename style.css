@@ -1,0 +1,482 @@
+/*
+Theme Name: Custom Forma
+Author: Natasa Bogdanovic
+Author URI: https://natasabogdanovic.rf.gd/
+Description: Custom WordPress theme
+Version: 1.1
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --fontPrimary:'Poppins', sans-serif;
+    --zuta: #FDBF57;
+    --plava: #092339;
+    --crna: #000000;
+    --bela: #fff;
+    --transition: .4s ease;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+body {
+    font-family: var(--fontPrimary);
+    font-size: 16px;
+    color: var(--bela);
+}
+
+/* nav */ 
+nav{
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.dropDown{
+    cursor: pointer;
+    margin-left: 20px;;
+}
+
+.dropDown img{
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+
+.logoCol img{
+    width: 70%;
+}
+
+.socialIcons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.socialIcons i{
+    margin-top: 5px;
+    background-color: #ffffff56 ;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons .fa-phone{
+    background: var(--zuta);
+    color: var(--crna);
+}
+
+.socialIcons .fa-map-marker-alt{
+    padding: 10px 12px;
+}
+
+.socialIcons .number{
+    background-color: var(--zuta);
+    color: var(--crna);
+    padding: 5px;
+    margin-right: 15px;
+    position: relative;
+    border-radius: 0.25em;
+}
+
+
+.triangle {
+    display: block;
+    height: 0px;
+    width: 0px;
+    border: 10px solid transparent;
+    border-top-color: var(--zuta);
+    position: absolute;
+    transform: rotate(270deg);
+    bottom: 5px;
+    right: 0px;
+    right: calc(50% - 80px);
+}
+
+/*slider */
+.slider{
+    background-color: var(--plava);
+    background-image: url(images/slider_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider img{
+    width: 80% !important;
+    border: 6px solid var(--zuta);
+}
+
+.slider h2,h1,h5{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.slider h5{
+    margin-bottom: 100px;
+}
+
+.slider h2{
+    padding-top: 100px;
+    font-weight: 100;
+    color: var(--zuta);
+    font-size: 2rem;
+}
+
+.slider h1{
+    font-weight: 600;
+    color: var(--zuta);
+    font-size: 3rem;
+}
+
+.slider h5{
+    font-weight: 100;
+}
+
+.slider .text{
+    position: relative;
+    bottom: 100px;
+    left: 20px;
+}
+
+.layerRow{
+    display: flex;
+}
+
+.layer1 {
+    width: 100%;
+    background: transparent linear-gradient(331deg, #C7884A 0%, #F6C485 46%, #B26F2DFE 61%, #EEC05BFE 100%) 0% 0% no-repeat padding-box;
+    margin: -60px 400px;
+    height: 650px;
+}
+  
+.layer2{
+    width: 100%;
+    margin-left: -100%;
+    margin-bottom: 100px;
+}
+
+.layer2 .text h4{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.layer2 .text p{
+    font-weight: 100;
+}
+
+/* uberUns */
+.uberUns{
+    background-image: url(images/building_background.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-color: var(--plava);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height:100vh;
+}
+
+.uberUns .desText,
+.uberUns .images{
+    flex: 0 0 50%;
+}
+
+.uberUns .images img:first-child{
+    position: absolute;
+    z-index: 1;
+    left: 0px ;
+    top: -300px;
+    width: 80%;
+}
+
+.uberUns .images img:last-child{
+    position: absolute;
+    top: -350px;
+    right: 150px;
+    width: 60%;
+    z-index: auto;
+    width: 60%;
+}
+
+.uberUns .desText {
+    padding:50px 100px;
+    text-align: justify;
+} 
+
+.uberUns .desText h1{
+    text-align: left;
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.uberUns .desText h3{
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+.uberUns .desText p{
+    font-weight: 100;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.uberUns .btnWeiter{
+    padding: 5px 25px;
+    border: 1px solid var(--bela);
+    color: var(--bela);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.uberUns .btnWeiter i{
+    position: relative;
+    left: 40px;
+}
+
+.uberUns .images{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+/* kontakt */
+
+.kontakt{
+    background-image: url(images/contact_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.kontakt #contact-form{
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.kontakt #contact-form .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontakt .text h4{
+    font-weight: 100;
+    font-size: 1.4rem;
+}
+
+.kontakt .text h2{
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.kontakt .text p{
+    font-size: .9rem;
+    margin-bottom: 30px;
+}
+
+.kontakt #contact-form .row input{
+    background: #FFFFFF0D 0% 0% no-repeat padding-box;
+    border: 1px solid #41476C;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height:40px;
+    line-height:38px;
+    width: 400px;
+    padding-left: 10px;
+}
+
+.kontakt .submitBtn input{
+    background: transparent !important;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white !important;
+    letter-spacing: 1.2px;
+    font-size: 1rem;
+    width: 300px !important;
+}
+
+.kontakt p{
+    margin-top: 10px;
+    font-size: .9rem;
+}
+
+::placeholder{
+    color: var(--bela) !important;
+    opacity: .6;
+}
+
+/* footer */
+footer{
+    background-color: var(--plava);
+    text-align: center;
+}
+
+footer .row{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+footer .row .col{
+    flex: 0 0 33%;
+}
+
+footer .container{
+    width: 60%;
+    margin: auto;
+    padding: 100px 0;
+}
+
+footer .bottomBar{
+    text-align: center;
+    font-size: .8rem;
+    opacity: .5;
+}
+
+footer i{
+    font-size: 3rem;
+    opacity: .4;
+    margin-bottom: 10px;
+}
+
+footer .lead{
+    text-transform: uppercase;
+    opacity: .5;
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+footer p:last-child{
+   font-weight: 100;
+   font-size: .9rem;
+}
+
+
+/* Responsive */
+
+@media (min-width:600px) and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .layer1{
+        margin: 0;
+        height: 0;
+    }
+
+    .uberUns .col{
+        flex: 0 0 100%;
+    }
+
+    .uberUns .images {
+        margin-bottom: 0px !important;
+    }
+
+    .uberUns .images img:first-child{
+        position: relative;
+        z-index: 1;
+        left: 300px;
+        top: -60px;
+        width: 30%;
+    }
+    
+    .uberUns .images img:last-child{
+        position: relative;
+        top: 0px;
+        right: 0px;
+        width: 30%;
+        z-index: 0;
+    }
+
+    .kontakt #contact-form .row{
+        flex-wrap: wrap;
+    }
+  }
+
+@media (min-width:320px) and (max-width:481px){
+    body{
+        overflow-x: hidden;
+    }
+    .socialIcons {
+        display: block;
+    }
+
+    .socialIcons .number{
+        margin-right: 0px;
+    }
+
+    .logoCol{
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .layer1{
+        margin: 0;
+        height: 0;
+    }
+
+    .uberUns .col{
+        flex: 0 0 100%;
+    }
+
+    .layerRow{
+        flex-wrap: wrap;
+    }
+
+    .uberUns {
+        height: auto !important;
+    }
+
+    .uberUns .desText{
+        padding: 15px;
+    }
+
+    .uberUns .col{
+        flex: 0 0 100%;
+    }
+
+    .uberUns .images {
+        margin-bottom: 0px !important;
+    }
+
+    .uberUns .images img:first-child{
+        position: relative;
+        z-index: 0;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+    }
+
+    .uberUns .images img:last-child{
+        display: none;
+    }
+
+    .kontakt #contact-form .row{
+        flex-wrap: wrap;
+    }
+
+    .kontakt #contact-form .row input {
+        width: 250px;
+    }
+
+    footer .container {
+        width: 90%;
+    }
+
+}
